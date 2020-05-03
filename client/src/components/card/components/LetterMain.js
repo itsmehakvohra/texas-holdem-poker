@@ -6,7 +6,7 @@ export default class LetterMain extends React.Component {
     return (
       <LetterLG>
         <span role="img" aria-label="spade">
-          ♠️
+          {this.props.suit}
         </span>
       </LetterLG>
     );

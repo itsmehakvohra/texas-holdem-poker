@@ -14,9 +14,17 @@ export class Main extends React.Component {
     return (
       <Card>
         <Container style={ConstainerStyle}>
-          <LetterRow align="left" />
-          <LetterMain />
-          <LetterRow align="right" />
+          <LetterRow
+            align="left"
+            letter={this.props.letter}
+            suit={this.props.suit}
+          />
+          <LetterMain suit={this.props.suit} />
+          <LetterRow
+            align="right"
+            letter={this.props.letter}
+            suit={this.props.suit}
+          />
         </Container>
       </Card>
     );

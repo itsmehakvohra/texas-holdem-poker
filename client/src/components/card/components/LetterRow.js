@@ -5,10 +5,10 @@ export default class LetterRow extends React.Component {
   render() {
     return (
       <>
-        <LetterSM textAlign={this.props.align}>A</LetterSM>
+        <LetterSM textAlign={this.props.align}>{this.props.letter}</LetterSM>
         <LetterSM textAlign={this.props.align}>
           <span role="img" aria-label="spade">
-            ♠️
+            {this.props.suit}
           </span>
         </LetterSM>
       </>
