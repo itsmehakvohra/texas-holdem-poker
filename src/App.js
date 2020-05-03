@@ -1,13 +1,13 @@
 import React from "react";
 
 import "./components/App.css";
-import Card from "./components/cards/card";
+import { Main as Card } from "./components/card/Main";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Card></Card>
+        <Card />
       </header>
     </div>
   );
