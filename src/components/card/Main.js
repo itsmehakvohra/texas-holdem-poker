@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "reactstrap";
+import { Container } from "reactstrap";
 
 import { Card } from "./components/Card";
 import LetterRow from "./components/LetterRow";
