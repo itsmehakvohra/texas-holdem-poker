@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 
-import { Card } from "./Card";
-import LetterRow from "./LetterRow";
-import LetterMain from "./LetterMain";
+import { Card } from "./components/Card";
+import LetterRow from "./components/LetterRow";
+import LetterMain from "./components/LetterMain";
 
 const ConstainerStyle = {
   padding: "10px 15px",
@@ -14,17 +14,9 @@ export class Main extends React.Component {
     return (
       <Card>
         <Container style={ConstainerStyle}>
-          <Row>
-            <Col>
-              <LetterRow align="left" />
-            </Col>
-            <Col>
-              <LetterMain />
-            </Col>
-            <Col>
-              <LetterRow align="right" />
-            </Col>
-          </Row>
+          <LetterRow align="left" />
+          <LetterMain />
+          <LetterRow align="right" />
         </Container>
       </Card>
     );

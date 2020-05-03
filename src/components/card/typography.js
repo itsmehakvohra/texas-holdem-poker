@@ -7,7 +7,7 @@ export const LetterSM = styled.h3`
 `;
 
 export const LetterLG = styled.h3`
-  font-size: 50px;
+  font-size: 40px;
   margin: ${(props) => props.margin || "0"};
   text-align: ${(props) => props.textAlign || "center"};
 `;
